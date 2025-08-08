@@ -1,0 +1,19 @@
+PowerControl_PCM_V0.1_Control/fabrication-toolkit-options.json
+/PowerControl_PCM_V0.1_Control/PowerControl_PCM_V0.1_Control-backups
+*.kicad_prl
+/PowerControl_PCM_V0.1_Control/production/backups
+PowerControl_PCM_V0.1_Power/fabrication-toolkit-options.json
+PowerControl_PCM_V0.1_Power/fp-info-cache
+PowerControl_PCM_V0.1_Control/fp-info-cache
+/PowerControl_PCM_V0.1_Power/PowerControl_PCM_V0.1_Power-backups
+/PowerControl_PCM_V0.1_Power/production/backups
+PowerControlBoard_RXCoil_V0.1/fp-info-cache
+PowerControlBoard_RXCoil_V0.1/PowerControlBoard_RXCoil_V0.1 - 副本.step
+PowerControlBoard_RXCoil_V0.1/fabrication-toolkit-options.json
+/PowerControlBoard_RXCoil_V0.1/PowerControlBoard_RXCoil_V0.1-backups
+/PowerControlBoard_RXCoil_V0.1/production/backups
+WirelessCharger_V0.1/fabrication-toolkit-options.json
+WirelessCharger_V0.1/fp-info-cache
+/WirelessCharger_V0.1/production/backups
+WirelessCharger_V0.1/RM2025-Wireless-Test.step
+/WirelessCharger_V0.1/WirelessCharger_V0.1-backups
