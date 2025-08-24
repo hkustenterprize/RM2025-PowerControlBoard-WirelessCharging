@@ -1,9 +1,7 @@
 #pragma once
 #include "main.h"
-//#include "PowerManager.hpp"
-//#include "Config.hpp"
 
-#define HARDWARE_ID 508
+#define HARDWARE_ID 501
 
 #ifndef HARDWARE_ID
 #error "please specify hardware id"
@@ -12,7 +10,7 @@
 
 //#define WPT_HARDWARE
 //#define CALIBRATION_MODE
-//#define IGNORE_CAPACITOR_ERROR
+
 
 #ifdef CALIBRATION_MODE
 
@@ -41,30 +39,11 @@
 
 
 
-#elif (HARDWARE_ID == 501) // 英雄
+#elif (HARDWARE_ID == 501) // 示例
 
-#define HARDWARE_UID_W0     0x00540049
-#define HARDWARE_UID_W1     0x534B5008
-#define HARDWARE_UID_W2     0x20343732
-
-#define ADC_VA_K        0.00284025493302185f
-#define ADC_VA_B        0.096382087f
-#define ADC_VB_K        0.00283064245539459f
-#define ADC_VB_B        0.096382087f
-
-#define ADC_IA_K        -0.00426032707865977f
-#define ADC_IA_B        34.6220566648572f
-#define ADC_IB_K        0.00436961348441836f
-#define ADC_IB_B        -35.442372697575f
-
-#define ADC_IREF_K      0.00438520650402692f
-#define ADC_IREF_B      -35.6851326479174f
-
-#elif (HARDWARE_ID == 502) // 哨兵
-
-#define HARDWARE_UID_W0     0x00550045
-#define HARDWARE_UID_W1     0x534B5008
-#define HARDWARE_UID_W2     0x20343732
+#define HARDWARE_UID_W0 0x00000000
+#define HARDWARE_UID_W1 0x00000000
+#define HARDWARE_UID_W2 0x00000000
 
 #define ADC_VA_K        0.00284025493302185f
 #define ADC_VA_B        0.096382087f
@@ -79,175 +58,6 @@
 #define ADC_IREF_K      0.00438520650402692f
 #define ADC_IREF_B      -35.6851326479174f
 
-#elif (HARDWARE_ID == 503) //狗腿
-
-#define HARDWARE_UID_W0     0x00540047
-#define HARDWARE_UID_W1     0x534B5008
-#define HARDWARE_UID_W2     0x20343732
-
-#define ADC_VA_K        0.00282477920006011f
-#define ADC_VA_B        0.129994439619974f
-#define ADC_VB_K        0.00283726698185258f
-#define ADC_VB_B        0.056964620611847f
-
-#define ADC_IA_K        -0.00442340460376483f
-#define ADC_IA_B        35.7995842810637f
-#define ADC_IB_K        0.00439805411371794f
-#define ADC_IB_B        -35.598290081865f
-
-#define ADC_IREF_K      0.0044329904428478f
-#define ADC_IREF_B      -36.0708890676954f
-
-#elif (HARDWARE_ID == 504) //无线充测试 GG
-
-#define HARDWARE_UID_W0     0x00550046
-#define HARDWARE_UID_W1     0x534B5008
-#define HARDWARE_UID_W2     0x20343732
-
-#define ADC_VA_K        0.00282477920006011f
-#define ADC_VA_B        0.129994439619974f
-#define ADC_VB_K        0.00283726698185258f
-#define ADC_VB_B        0.056964620611847f
-
-#define ADC_IA_K        -0.00442340460376483f
-#define ADC_IA_B        35.7995842810637f
-#define ADC_IB_K        0.00439805411371794f
-#define ADC_IB_B        -35.598290081865f
-
-#define ADC_IREF_K      0.0044329904428478f
-#define ADC_IREF_B      -36.0708890676954f
-
-#define WPT_HARDWARE
-#define ADC_VWPT_K      0.00282862236057022f
-#define ADC_VWPT_B      0.126888445762173f
-#define ADC_IWPT_K      0.00421074805006724f
-#define ADC_IWPT_B      -34.1917170449864f
-
-#elif (HARDWARE_ID == 505) //无线充测试
-
-#define HARDWARE_UID_W0     0x001B0037
-#define HARDWARE_UID_W1     0x31365010
-#define HARDWARE_UID_W2     0x2035384D
-
-#define ADC_VA_K        0.00282477920006011f
-#define ADC_VA_B        0.129994439619974f
-#define ADC_VB_K        0.00283726698185258f
-#define ADC_VB_B        0.056964620611847f
-
-#define ADC_IA_K        -0.00442340460376483f
-#define ADC_IA_B        35.7995842810637f
-#define ADC_IB_K        0.00439805411371794f
-#define ADC_IB_B        -35.598290081865f
-
-#define ADC_IREF_K      0.0044329904428478f
-#define ADC_IREF_B      -36.0708890676954f
-
-#define WPT_HARDWARE
-#define ADC_VWPT_K      0.00282862236057022f
-#define ADC_VWPT_B      0.126888445762173f
-#define ADC_IWPT_K      0.00421074805006724f
-#define ADC_IWPT_B      -34.1917170449864f
-
-
-#elif (HARDWARE_ID == 506) //小舵1
-
-#define HARDWARE_UID_W0     0x001B002B
-#define HARDWARE_UID_W1     0x31365010
-#define HARDWARE_UID_W2     0x2035384D
-
-#define ADC_VA_K        0.00283493223113557f
-#define ADC_VA_B        0.0824525325661796f
-#define ADC_VB_K        0.00282774610753841f
-#define ADC_VB_B        0.126358169972285f
-
-#define ADC_IA_K        -0.0044284601423753f
-#define ADC_IA_B        36.0000838478347f
-#define ADC_IB_K        0.00436717052691349f
-#define ADC_IB_B        -35.4001684959633f
-
-#define ADC_IREF_K      0.00440561248063639f
-#define ADC_IREF_B      -35.8599512466255f
-
-#define WPT_HARDWARE
-#define ADC_VWPT_K      0.00285744332443395f
-#define ADC_VWPT_B      0.0925634356708258f
-#define ADC_IWPT_K      0.00421074805006724f
-#define ADC_IWPT_B      -34.1917170449864f
-
-#elif (HARDWARE_ID == 507) // 英雄无线充
-
-#define HARDWARE_UID_W0     0x001B003F
-#define HARDWARE_UID_W1     0x31365010
-#define HARDWARE_UID_W2     0x2035384D
-
-#define ADC_VA_K        0.00283357863152178f
-#define ADC_VA_B        0.104341097568952f
-#define ADC_VB_K        0.00285490852708267f
-#define ADC_VB_B        0.124052377413364f
-
-#define ADC_IA_K        -0.0044471986585753f
-#define ADC_IA_B        36.1452773884209f
-#define ADC_IB_K        0.00435227964278455f
-#define ADC_IB_B        -35.2560874567452f
-
-#define ADC_IREF_K      0.00446862088090562f
-#define ADC_IREF_B      -36.3173599243562f
-
-#define WPT_HARDWARE
-#define ADC_VWPT_K      0.00283752726048528f
-#define ADC_VWPT_B      0.149896982075152f
-#define ADC_IWPT_K      0.00421074805006724f
-#define ADC_IWPT_B      -34.3417170449864f
-
-#elif (HARDWARE_ID == 508) // 备件
-
-#define HARDWARE_UID_W0     0x00160034
-#define HARDWARE_UID_W1     0x31365010
-#define HARDWARE_UID_W2     0x2035384D
-
-#define ADC_VA_K        0.00284633336303039f
-#define ADC_VA_B        0.101508865290139f
-#define ADC_VB_K        0.00284632629126314f
-#define ADC_VB_B        0.111902440164819f
-
-#define ADC_IA_K        -0.00442224094123577f
-#define ADC_IA_B        35.9506407850126f
-#define ADC_IB_K        0.00439690976723158f
-#define ADC_IB_B        -35.6464365729912f
-
-#define ADC_IREF_K      0.00438729036198406f
-#define ADC_IREF_B      -35.7106761793126f
-
-#define WPT_HARDWARE
-#define ADC_VWPT_K      0.00282847471852994f
-#define ADC_VWPT_B      0.101343129688427f
-#define ADC_IWPT_K      0.00421074805006724f
-#define ADC_IWPT_B      -34.3397170449864f
-
-#elif (HARDWARE_ID == 509) // 备件
-
-#define HARDWARE_UID_W0     0x003F003F
-#define HARDWARE_UID_W1     0x31365010
-#define HARDWARE_UID_W2     0x2035384D
-
-#define ADC_VA_K        0.00285648293028194f
-#define ADC_VA_B        0.105160621329492f
-#define ADC_VB_K        0.0028677485474414f
-#define ADC_VB_B        0.104628167159493f
-
-#define ADC_IA_K        -0.00442591938778346f
-#define ADC_IA_B        35.9746595967854f
-#define ADC_IB_K        0.00443954243767679f
-#define ADC_IB_B        -36.0205507032883f
-
-#define ADC_IREF_K      0.00441294349529363f
-#define ADC_IREF_B      -35.8819360104446f
-
-#define WPT_HARDWARE
-#define ADC_VWPT_K      0.00284706000781405f
-#define ADC_VWPT_B      0.102342287644209f
-#define ADC_IWPT_K      0.00441294349529363f//
-#define ADC_IWPT_B      -35.9317170449864f//
 
 #endif
 
