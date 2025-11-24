@@ -1,5 +1,13 @@
 # RM2025-PowerControlBoard
-
+## 构建
+### Option1： Docker
+```Bash
+docker build -t embedded-env:1.0 .
+```
+- build
+```Bash
+docker run --rm -v "$(pwd)":/workspace embedded-env:1.0 make -j HARDWARE_ID=XXX
+```
 ## 通讯格式
 
 ### 主控板>电容
@@ -154,3 +162,12 @@ ASK通讯等效2000波特率
 
 需求功率5W或80W：1bit
 功率反馈：8bit，量程100W
+
+## Docker
+```Bash
+docker build -t embedded-env:1.0 .
+```
+- build
+```Bash
+docker run --rm -v "$(pwd)":/workspace emmbedded-env:1.0 make -j HARDWARE_ID=508
+```
