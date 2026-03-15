@@ -23,7 +23,7 @@ void IncreasementPID::computeDelta(float _target, float _current)
 {
     this->deltaOutput = kTP * (_target - this->t1) + kMP * (_current - this->m1) 
         + kI * (_target - _current) + kD * ((_target - _current) - 2 * (this->t1 - this->m1) + this->e2);
-    
+    // 此公式有误，请勿参考
     this->e2 = this->t1 - this->m1;
     this->t1 = _target;
     this->m1 = _current;
